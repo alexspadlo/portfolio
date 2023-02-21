@@ -1,0 +1,48 @@
+{
+    "moduleNameMapper": {
+        "@google/model-viewer": "<rootDir>/jest/jest.filemock.js",
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|glb|aac|oga)$": "<rootDir>/jest/jest.filemock.js",
+        "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+    },
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+        "src/**/*.tsx",
+        "!src/**/*.test.js",
+        "!src/index.tsx"
+    ],
+    "transform": {
+        "^.+\\.(js|tsx)?$": "babel-jest"
+    },
+    "verbose": true,
+    "coverageReporters": [
+        "lcov",
+        "json",
+        "cobertura"
+    ],
+    "moduleFileExtensions": [
+        "ts",
+        "tsx",
+        "js",
+        "jsx"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "coverageThreshold": {
+        "global": {
+            "branches": 0,
+            "functions": 0,
+            "lines": 0,
+            "statements": 0
+        }
+    },
+    "reporters": [
+        "default",
+        [
+            "jest-trx-results-processor",
+            {
+                "outputFile": ".testresults/resulting.trx",
+                "defaultUserName": "Aleksandra Spadlo"
+            }
+        ]
+    ]
+}

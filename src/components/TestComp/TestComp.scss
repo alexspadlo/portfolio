@@ -1,0 +1,13 @@
+@font-face {
+  font-family: MyRalewayBold;
+  src: url("./ralewayBold.woff2") format("woff2");
+}
+
+.batata {
+  background-color: purple;
+}
+
+.some {
+  color: white;
+  font-family: MyRalewayBold, sans-serif;
+}
