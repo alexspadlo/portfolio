@@ -1,0 +1,26 @@
+@import "../../../stylesheet/_vars.scss";
+
+.modalBorderRadius {
+  border-radius: 18px !important;
+}
+
+@media (max-width: 580px) {
+  .modalBorderRadius {
+    border-radius: 0 !important;
+    border: none !important;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .popUpFix {
+    min-width: 100% !important;
+    margin: 0 !important;
+    padding: 0;
+  }
+}
+
+@media (min-width: 581px) and (max-width: 767px) {
+  .popUpFix {
+    min-width: 80% !important;
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../stylesheet/_vars.scss";
+
+.codingStyle {
+  padding: 40px 32px;
+  border: 1px solid #caa24f;
+  border-left: none;
+  border-right: none;
+}
+
+.commonBg {
+  height: 100%;
+  border: 1px solid #caa24f;
+  border-right: none;
+  background-image: url("../../static/images/web1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &.designBack {
+    background-image: url("../../static/images/commercial.png");
+    border: 1px solid #caa24f;
+    border-left: none;
+  }
+}

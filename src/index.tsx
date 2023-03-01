@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from '@container/'
 import 'bootstrap/dist/js/bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
+import './stylesheet/globalstyle.scss'
+import './stylesheet/global.css'
 
-const root = createRoot(document.getElementById('root') as HTMLElement)
-root.render(<App />)
+createRoot(document.getElementById('root') as HTMLElement).render(<App />)

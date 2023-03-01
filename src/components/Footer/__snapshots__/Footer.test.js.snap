@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <Footer /> component Should render without the props 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row pb-2"
+  >
+    <div
+      className="col-11 p-0 m-auto text-center"
+    >
+      <hr
+        className="goldHR"
+      />
+      <p
+        className="fontBold"
+      >
+        Copyright © 
+        2023
+         Aleksandra Spadlo
+      </p>
+    </div>
+  </div>
+</div>
+`;

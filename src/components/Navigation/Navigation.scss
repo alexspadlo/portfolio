@@ -1,0 +1,22 @@
+@import "../../stylesheet/_vars.scss";
+
+.contStyle {
+  text-align: center;
+  letter-spacing: 0.15em;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+
+  &:hover {
+    background-color: $colGold;
+    color: #08161a;
+  }
+}
+
+.socialStyle {
+  color: white;
+
+  &:hover {
+    color: $colGold;
+  }
+}

@@ -106,7 +106,7 @@ if (env.NODE_ENV === 'development') {
             }),
             new ForkTsCheckerWebpackPlugin()
         ],
-        devtool: 'source-map',
+        devtool: 'eval',
         devServer: {
             static: './',
             hot: true,

@@ -1,0 +1,113 @@
+$colBlack: #000;
+$colWhite: #fff;
+$colDarkBlue: #08161a;
+$colGold: #caa24f;
+
+.pointer {
+  cursor: pointer;
+}
+
+.verticalCenter {
+  min-height: 100%;
+  min-height: calc(100vh);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.globeW50 {
+  min-width: 50%;
+}
+
+.customHr {
+  border-top: 5px solid $colWhite;
+}
+
+.goldHR {
+  border-top: 2px solid #caa24f;
+}
+
+//text-colors
+
+.txtcolWhite {
+  color: $colWhite;
+}
+
+.txtcolBlack {
+  color: $colBlack;
+}
+
+// text-weight
+.fontRegular {
+  font-family: Roboto, sans-serif;
+}
+
+.fontThin {
+  font-family: RobotoThin, sans-serif;
+}
+
+.fontLight {
+  font-family: RobotoLight, sans-serif;
+}
+
+.fontBold {
+  font-family: RobotoBold, sans-serif;
+}
+
+.fontSuperBold {
+  font-family: RobotoBlack, sans-serif;
+}
+
+// background colors
+.mainBack {
+  background-color: $colDarkBlue;
+}
+
+// font size
+.fontHigher {
+  font-size: 3rem;
+}
+
+.fonH1 {
+  font-size: 2.5rem;
+}
+
+.fonH2 {
+  font-size: 2rem;
+}
+
+.fonH3 {
+  font-size: 1.75rem;
+}
+
+.fonH4 {
+  font-size: 1.5rem;
+}
+
+.fonH5 {
+  font-size: 1.25rem;
+}
+
+.fonH6 {
+  font-size: 1rem;
+}
+
+.fonSmall {
+  font-size: 0.5rem;
+}
+
+@media (max-width: 580px) {
+  .fontHigher {
+    font-size: 2rem;
+  }
+
+  .fonH1 {
+    font-size: 1.5rem;
+  }
+
+  .fonH2,
+  .fonH3 {
+    font-size: 1.25rem;
+  }
+}

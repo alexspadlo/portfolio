@@ -1,18 +1,12 @@
 // declaration.d.ts
-declare global {
-    namespace JSX {
-        interface IntrinsicElements {
-            'model-viewer': MyElementAttributes;
-        }
-        interface MyElementAttributes {
-            src: string;
-        }
-    }
-}
 // packages
 declare module 'jquery'
+declare module 'react-router-dom'
 
 // paths
+declare module '@fortawesome/free-solid-svg-icons'
+declare module '@fortawesome/free-regular-svg-icons'
+declare module '@fortawesome/free-brands-svg-icons'
 declare module '@components/*'
 declare module '@container/*'
 declare module '@generic/*'

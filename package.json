@@ -68,12 +68,19 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@google/model-viewer": "^3.0.0",
     "bootstrap": "4.6.0",
     "jquery": "^3.6.1",
     "lottie-web": "^5.10.2",
     "popper.js": "^1.16.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.2"
   }
 }

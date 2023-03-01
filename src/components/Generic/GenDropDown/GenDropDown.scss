@@ -1,0 +1,17 @@
+@import "../../../stylesheet/_vars.scss";
+
+.dropDownColor {
+  background-color: $colGold !important;
+  padding: 0 !important;
+  transform: translate3d(-95px, 27px, 0);
+
+  .dropLink {
+    padding: 10px;
+    color: white;
+
+    &:hover {
+      color: black;
+      background-color: $colGold;
+    }
+  }
+}
