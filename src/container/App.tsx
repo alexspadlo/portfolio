@@ -3,7 +3,6 @@ import $ from 'jquery'
 import {
     BrowserRouter, Routes, Route, Navigate,
 } from 'react-router-dom'
-import PublicRoute from '@components/RouterComponents/PublicRoute'
 import Navigation from '@components/Navigation'
 import Footer from '@components/Footer'
 import MainComp from '@components/MainComp'
@@ -35,23 +34,8 @@ const App: FC = () => {
         <BrowserRouter>
             <Navigation />
             <Routes>
-                <Route
-                    element={(
-                        <PublicRoute
-                            restricted
-                            component={MainComp}
-                            handlePopup={handlePopup}
-                            path="/"
-                            exact
-                        />
-                    )}
-                    path="/"
-                />
-                <Route
-                    path="*"
-                    element={<Navigate replace to="/" />}
-                />
-
+                <Route element={(<MainComp handlePopup={handlePopup} />)} path="/" />
+                <Route path="*" element={(<Navigate replace to="/" />)} />
             </Routes>
             <PopUp
                 {...popup}

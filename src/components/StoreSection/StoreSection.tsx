@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import shopPaint from '../../static/images/forShop.png'
+import shopPaint from '@images/forShop.png'
 import s from './StoreSection.scss'
 
 const StoreSection: FC = () => {

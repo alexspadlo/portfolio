@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
             <div className="row pb-2">
                 <div className="col-11 p-0 m-auto text-center">
                     <hr className={s.goldHR} />
-                    <p className={s.fontBold}>Copyright © {new Date().getFullYear()} Aleksandra Spadlo</p>
+                    <p className={`${s.fontBold} ${s.txtcolWhite}`}>Copyright © {new Date().getFullYear()} Aleksandra Spadlo</p>
                 </div>
             </div>
         </div>

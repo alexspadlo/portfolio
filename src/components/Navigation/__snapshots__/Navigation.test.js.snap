@@ -11,7 +11,7 @@ exports[`Test on <Navigation /> component Should render without the props 1`] = 
       className="col-12 col-lg-7 text-center text-lg-left"
     >
       <p
-        className="p-3 h5 fontThin"
+        className="p-3 h5 fontThin txtcolWhite"
       >
         Aleksandra Spadlo Portfolio
       </p>
@@ -99,7 +99,7 @@ exports[`Test on <Navigation /> component Should render without the props 1`] = 
         <span
           aria-expanded="false"
           aria-haspopup="true"
-          className="h5 fontLight"
+          className="h5 fontLight txtcolWhite"
           data-toggle="dropdown"
           id="contactMeId"
         >

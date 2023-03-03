@@ -1,4 +1,5 @@
 import React, { FC, useEffect, ReactNode } from 'react'
+import GCFontAwe from '@generic/GCFontAwe'
 import $ from 'jquery'
 import s from './PopUp.scss'
 
@@ -10,25 +11,31 @@ export interface PopupProps {
 	customSize?: string | undefined
 }
 
-export const PopUp: FC<PopupProps> = ({
- closePopup, modalContent, isLarge, noBackDrop, customSize, 
-}) => {
-	if (!modalContent || !closePopup) return null
+export const PopUp: FC<PopupProps> = ({ closePopup, modalContent, isLarge, noBackDrop, customSize }) => {
+
 	useEffect(() => {
 		$(document).on('hidden.bs.modal', '#popUpAlex', () => {
-			closePopup()
+			if (!closePopup) return null
+			return closePopup()
+
 		})
 		return () => $(document).off('hidden.bs.modal', '#popUpAlex')
 	}, [])
-	
-	const moDalstyle = customSize ? { maxWidth: `${customSize}` } : {}
+
+	if (!modalContent) return null
+
+	const moDalstyle = customSize ? { maxWidth: '2000px', width: `${customSize}` } : {}
 	return (
 		<section className="w-100">
-			<div className="modal fade" data-backdrop={`${noBackDrop ? 'static' : true}`} id="PopUp" tabIndex={-1} role="dialog" aria-labelledby="PopUpTitle" aria-hidden="true">
+			<div className="modal fade" data-backdrop={`${noBackDrop ? 'static' : true}`} id="popUpAlex" tabIndex={-1} role="dialog" aria-labelledby="PopUpTitle" aria-hidden="true">
 				<div style={moDalstyle} className={`modal-dialog ${isLarge ? 'modal-lg' : ''} ${s.popUpFix} modal-dialog-centered`} role="document">
 					<div className={`modal-content ${s.modalBorderRadius}`}>
 						<div className="modal-body">
-							<p className="h2 pr-2 pl-2 text-right text-danger"><i data-dismiss="modal" id="dismissModal" className={`fas ${s.pointer} fa-times`} /></p>
+							<section className='w-100 text-right'>
+								<span data-dismiss="modal">
+									<GCFontAwe nameIco='fa-times' customClass={`${s.pointer} h2 pr-2 pl-2 text-danger`} />
+								</span>
+							</section>
 							{modalContent}
 						</div>
 					</div>

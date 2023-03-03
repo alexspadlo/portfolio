@@ -11,13 +11,14 @@ const Navigation: FC = () => {
         <div className='container-fluid'>
             <div className='row'>
                 <div className='col-12 col-lg-7 text-center text-lg-left'>
-                    <p className={`p-3 h5 ${s.fontThin}`}>{title}</p>
+                    <p className={`p-3 h5 ${s.fontThin} ${s.txtcolWhite}`}>{title}</p>
                 </div>
                 <div className='col-12 col-lg-3'>
                     <section className='w-100 p-3 text-center text-lg-right'>
                         {socials && socials.length > 0 &&
                             socials.map((soc) => (
                                 <span
+                                    key={soc.icon}
                                     aria-hidden="true"
                                     onClick={() => window.open(soc.url)}
                                 >
@@ -30,7 +31,7 @@ const Navigation: FC = () => {
                     <GenDropDown
                         dropId={'contactMeId'}
                         dropData={contSchema.dropdown}
-                        txtClass={`h5 ${s.fontLight}`}
+                        txtClass={`h5 ${s.fontLight} ${s.txtcolWhite}`}
                         onClick={() => console.log('vvbk')}
                         dropLabel={contSchema.label}
                     />

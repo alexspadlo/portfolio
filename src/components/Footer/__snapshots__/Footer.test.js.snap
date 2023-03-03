@@ -14,7 +14,7 @@ exports[`Test on <Footer /> component Should render without the props 1`] = `
         className="goldHR"
       />
       <p
-        className="fontBold"
+        className="fontBold txtcolWhite"
       >
         Copyright © 
         2023

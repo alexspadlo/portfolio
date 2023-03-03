@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import hero from '../../static/images/heroBan.png'
+import hero from '@images/heroBan.png'
 import s from './HeroBanner.scss'
 
 const HeroBanner: FC = () => {

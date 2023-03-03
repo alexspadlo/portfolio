@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <DesignContent /> component Should render without the props 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 pb-3 text-right"
+    >
+      <p
+        className="h2 mb-3 fontBold txtcolBlack"
+      >
+        Commercial Design
+      </p>
+      <hr
+        className="goldHR w-100"
+      />
+    </div>
+    <div
+      className="col-12 col-lg-2 col-md-6 text-center"
+    >
+      <span
+        className="btn active mb-3 btn-info"
+        onClick={[Function]}
+      >
+        Artworks
+      </span>
+    </div>
+    <div
+      className="col-12 col-lg-2 col-md-6 text-center"
+    >
+      <span
+        className="btn  mb-3 btn-info"
+        onClick={[Function]}
+      >
+        Banners
+      </span>
+    </div>
+    <div
+      className="col-12 col-lg-2 col-md-6 text-center"
+    >
+      <span
+        className="btn  mb-3 btn-info"
+        onClick={[Function]}
+      >
+        Posters
+      </span>
+    </div>
+    <div
+      className="col-12 col-lg-2 col-md-6 text-center"
+    >
+      <span
+        className="btn  mb-3 btn-info"
+        onClick={[Function]}
+      >
+        Newsletters
+      </span>
+    </div>
+    <div
+      className="col-12 col-lg-2 col-md-6 text-center"
+    >
+      <span
+        className="btn  mb-3 btn-info"
+        onClick={[Function]}
+      >
+        Motion
+      </span>
+    </div>
+    <div
+      className="col-12 col-lg-2 col-md-6 text-center"
+    >
+      <span
+        className="btn  mb-3 btn-info"
+        onClick={[Function]}
+      >
+        Logos
+      </span>
+    </div>
+  </div>
+</div>
+`;

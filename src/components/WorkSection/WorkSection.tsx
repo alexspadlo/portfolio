@@ -1,5 +1,7 @@
 import React, { FC } from 'react'
 import { PopupProps } from '../Generic/PopUp'
+import UIContent from './UIContent'
+import DesignContent from './DesignContent'
 import workSchema from './data'
 import s from './WorkSection.scss'
 
@@ -12,8 +14,17 @@ const WorkSection: FC<WorkProps> = ({ handlePopup }) => {
 
     const handleUI = () => {
         handlePopup({
-            modalContent: <p>bebebe</p>,
-            isLarge: true,
+            modalContent: <UIContent />,
+            customSize: '100%',
+            noBackDrop: true
+        })
+    }
+
+    const handleDesign = () => {
+        handlePopup({
+            modalContent: <DesignContent />,
+            customSize: '100%',
+            noBackDrop: true
         })
     }
 
@@ -26,7 +37,7 @@ const WorkSection: FC<WorkProps> = ({ handlePopup }) => {
                         <p className={`${s.fontThin} mb-4`}>{workSection.subTitle}</p>
                         <span
                             aria-hidden="true"
-                            onClick={handleUI}
+                            onClick={() => handleUI()}
                             className="btn mb-3 btn-info">
                             {button}
                         </span>
@@ -44,7 +55,12 @@ const WorkSection: FC<WorkProps> = ({ handlePopup }) => {
                     <section className={`${s.codingStyle}`}>
                         <p className={`h2 mb-3 ${s.fontBold}`}>{designSection.title}</p>
                         <p className={`${s.fontThin} mb-4`}>{designSection.subTitle}</p>
-                        <span className="btn mb-3 btn-info">{button}</span>
+                        <span
+                            aria-hidden="true"
+                            onClick={() => handleDesign()}
+                            className="btn mb-3 btn-info">
+                            {button}
+                        </span>
                     </section>
                 </div>
             </div>

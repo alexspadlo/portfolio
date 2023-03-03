@@ -17,7 +17,7 @@
                     "@generic": "./src/components/Generic",
                     "@constants": "./src/constants",
                     "@stylesheet": "./src/stylesheet",
-                    "@images": "./src/statics/images",
+                    "@images": "./src/static/images",
                     "@utils": "./src/utils"
                 }
             }
