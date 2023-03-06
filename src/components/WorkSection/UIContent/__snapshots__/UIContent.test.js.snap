@@ -19,6 +19,56 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
         className="goldHR w-100"
       />
     </div>
+    <div
+      className="col-12"
+    >
+      <section
+        aria-hidden="true"
+        className="w-100 "
+        onClick={[Function]}
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-10"
+          >
+            <p
+              className="gcLight mb-0 mt-1"
+            >
+              Some options
+            </p>
+          </div>
+          <div
+            className="col-2 text-right"
+          >
+            <span
+              aria-hidden="true"
+              className="txtGold d-inline-block align-middle mb-0"
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-plus "
+                data-icon="plus"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={{}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
+                  fill="currentColor"
+                  style={{}}
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </div>
 `;

@@ -23,17 +23,7 @@ exports[`Test on <DesignContent /> component Should render without the props 1`]
       className="col-12 col-lg-2 col-md-6 text-center"
     >
       <span
-        className="btn active mb-3 btn-info"
-        onClick={[Function]}
-      >
-        Artworks
-      </span>
-    </div>
-    <div
-      className="col-12 col-lg-2 col-md-6 text-center"
-    >
-      <span
-        className="btn  mb-3 btn-info"
+        className="btn active mb-4 btn-info"
         onClick={[Function]}
       >
         Banners
@@ -43,7 +33,7 @@ exports[`Test on <DesignContent /> component Should render without the props 1`]
       className="col-12 col-lg-2 col-md-6 text-center"
     >
       <span
-        className="btn  mb-3 btn-info"
+        className="btn  mb-4 btn-info"
         onClick={[Function]}
       >
         Posters
@@ -53,7 +43,7 @@ exports[`Test on <DesignContent /> component Should render without the props 1`]
       className="col-12 col-lg-2 col-md-6 text-center"
     >
       <span
-        className="btn  mb-3 btn-info"
+        className="btn  mb-4 btn-info"
         onClick={[Function]}
       >
         Newsletters
@@ -63,7 +53,7 @@ exports[`Test on <DesignContent /> component Should render without the props 1`]
       className="col-12 col-lg-2 col-md-6 text-center"
     >
       <span
-        className="btn  mb-3 btn-info"
+        className="btn  mb-4 btn-info"
         onClick={[Function]}
       >
         Motion
@@ -73,11 +63,139 @@ exports[`Test on <DesignContent /> component Should render without the props 1`]
       className="col-12 col-lg-2 col-md-6 text-center"
     >
       <span
-        className="btn  mb-3 btn-info"
+        className="btn  mb-4 btn-info"
         onClick={[Function]}
       >
         Logos
       </span>
+    </div>
+    <div
+      className="col-12 col-lg-2 col-md-6 text-center"
+    >
+      <span
+        className="btn  mb-4 btn-info"
+        onClick={[Function]}
+      >
+        Artworks
+      </span>
+    </div>
+    <div
+      className="col-12 mb-3"
+    >
+      <div
+        className="carousel slide"
+        data-ride="carousel"
+        id="designCarousel"
+      >
+        <div
+          className="carousel-inner text-center px-5"
+        >
+          <div
+            className="carousel-item active"
+          >
+            <img
+              alt="test-file-stub"
+              className="imgHei"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="carousel-item "
+          >
+            <img
+              alt="test-file-stub"
+              className="imgHei"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="carousel-item "
+          >
+            <img
+              alt="test-file-stub"
+              className="imgHei"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="carousel-item "
+          >
+            <img
+              alt="test-file-stub"
+              className="imgHei"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="carousel-item "
+          >
+            <img
+              alt="test-file-stub"
+              className="imgHei"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="carousel-item "
+          >
+            <img
+              alt="test-file-stub"
+              className="imgHei"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="carousel-item "
+          >
+            <img
+              alt="test-file-stub"
+              className="imgHei"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="carousel-item "
+          >
+            <img
+              alt="test-file-stub"
+              className="imgHei"
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+        <a
+          className="carouseControl carouselPrev carousel-control-prev"
+          data-slide="prev"
+          href="#designCarousel"
+          role="button"
+        >
+          <span
+            aria-hidden="true"
+            className="carouselArrows carousel-control-prev-icon"
+          />
+          <span
+            className="sr-only"
+          >
+            Previous
+          </span>
+        </a>
+        <a
+          className="carouseControl carouselNext carousel-control-next"
+          data-slide="next"
+          href="#designCarousel"
+          role="button"
+        >
+          <span
+            aria-hidden="true"
+            className="carouselArrows carouselRight carousel-control-next-icon"
+          />
+          <span
+            className="sr-only"
+          >
+            Next
+          </span>
+        </a>
+      </div>
     </div>
   </div>
 </div>

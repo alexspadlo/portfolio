@@ -1,0 +1,158 @@
+import React from 'react'
+import renderer, { act } from 'react-test-renderer'
+import GCCollapse from './GCCollapse'
+
+const rest = {
+    text: 'Some text here!',
+    children: <p className="h3 text-muted text-center" >Only child</p>
+}
+
+describe('Test on <GCCollapse /> component', () => {
+    test('Should not render without props', () => {
+        const compRender = renderer.create(<GCCollapse />)
+        expect(compRender.toJSON()).toBeNull()
+    })
+    test('Should not render with text without children', () => {
+        const compRender = renderer.create(<GCCollapse text="text here!" />)
+        expect(compRender.toJSON()).toBeNull()
+    })
+    test('Should not render with children without text', () => {
+        const compRender = renderer.create(<GCCollapse children={rest.children} />)
+        expect(compRender.toJSON()).toBeNull()
+    })
+    test('Should not have a children without click', () => {
+        const compRender = renderer.create(<GCCollapse {...rest} />)
+        const children = compRender.root.findAllByProps({ className: 'h3 text-muted text-center' })
+        expect(children).toHaveLength(0)
+    })
+    test('Should show the children when was clicked', () => {
+        const preventDefault = jest.fn()
+        let compRender
+        act(() => compRender = renderer.create(<GCCollapse {...rest} />))
+        const toClick = compRender.root.findByProps({ className: ' bluePlus d-inline-block align-middle mb-0' })
+        act(() => toClick.props.onClick({ preventDefault }))
+        const children = compRender.root.findAllByProps({ className: 'h3 text-muted text-center' })
+        expect(children).toHaveLength(1)
+        expect(preventDefault).toHaveBeenCalled()
+    })
+    test('Should have text without content', () => {
+        const compRender = renderer.create(<GCCollapse {...rest} />)
+        const theText = compRender.root.findByProps({ className: 'gcLight mb-0 mt-1' })
+        expect(theText.props.children).toEqual(rest.text)
+    })
+    test('Should not have a text with content and should have a content', () => {
+        const compRender = renderer.create(<GCCollapse {...rest} content={<p className='contentCustom'>this is a content</p>} />)
+        const theText = compRender.root.findAllByProps({ className: 'gcLight mb-0 mt-1' })
+        expect(theText).toHaveLength(0)
+        const theContent = compRender.root.findAllByProps({ className: 'contentCustom' })
+        expect(theContent).toHaveLength(1)
+    })
+    test('Should not have a content', () => {
+        const compRender = renderer.create(<GCCollapse {...rest} />)
+        const theContent = compRender.root.findAllByProps({ className: 'contentCustom' })
+        expect(theContent).toHaveLength(0)
+    })
+    test('Should have a hr tag', () => {
+        let compRender
+        act(() => compRender = renderer.create(<GCCollapse {...rest} />))
+        const toClick = compRender.root.findByProps({ className: ' bluePlus d-inline-block align-middle mb-0' })
+        act(() => toClick.props.onClick({ preventDefault: jest.fn() }))
+        const theHr = compRender.root.findAllByType('hr')
+        expect(theHr).toHaveLength(1)
+    })
+    test('Should not have a hr tag', () => {
+        let compRender
+        act(() => compRender = renderer.create(<GCCollapse {...rest} noHr />))
+        const toClick = compRender.root.findByProps({ className: ' bluePlus d-inline-block align-middle mb-0' })
+        act(() => toClick.props.onClick({ preventDefault: jest.fn() }))
+        const theHr = compRender.root.findAllByType('hr')
+        expect(theHr).toHaveLength(0)
+    })
+    test('The children should have a default space', () => {
+        let compRender
+        act(() => compRender = renderer.create(<GCCollapse {...rest} />))
+        const toClick = compRender.root.findByProps({ className: ' bluePlus d-inline-block align-middle mb-0' })
+        act(() => toClick.props.onClick({ preventDefault: jest.fn() }))
+        const spaces = compRender.root.findAllByProps({ className: 'row m-0' })
+        expect(spaces).toHaveLength(1)
+    })
+    test('Should render the children without space', () => {
+        let compRender
+        act(() => compRender = renderer.create(<GCCollapse {...rest} noSpace />))
+        const toClick = compRender.root.findByProps({ className: ' bluePlus d-inline-block align-middle mb-0' })
+        act(() => toClick.props.onClick({ preventDefault: jest.fn() }))
+        const spaces = compRender.root.findAllByProps({ className: 'row m-0' })
+        expect(spaces).toHaveLength(0)
+    })
+    test('Should accept the click without the props isDisabled', () => {
+        const preventDefault = jest.fn()
+        let compRender
+        act(() => compRender = renderer.create(<GCCollapse {...rest} />))
+        const toClick = compRender.root.findByProps({ className: ' bluePlus d-inline-block align-middle mb-0' })
+        act(() => toClick.props.onClick({ preventDefault }))
+        expect(preventDefault).toHaveBeenCalled()
+    })
+    test('Should not accept the click with the props isDisabled', () => {
+        const preventDefault = jest.fn()
+        let compRender
+        act(() => compRender = renderer.create(<GCCollapse {...rest} isDisabled />))
+        const toClick = compRender.root.findByProps({ className: 'disbIco bluePlus d-inline-block align-middle mb-0' })
+        act(() => toClick.props.onClick({ preventDefault }))
+        expect(preventDefault).not.toHaveBeenCalled()
+    })
+    //quero provar que ele fica aberto se o valor do props isDisabled mudar quando o state é true
+    // test('Should accept the click after that should disable and not accept click anymore', () => {
+    //     const preventDefault = jest.fn()
+    //     let compRender
+    //     act(() => compRender = renderer.create(<GCCollapse {...rest} />))
+    //     const toClick = compRender.root.findByProps({ className: ' bluePlus d-inline-block align-middle mb-0' })
+    //     act(() => toClick.props.onClick({ preventDefault }))
+    //     const spaces = compRender.root.findAllByProps({ className: 'row m-0' })
+    //     expect(spaces).toHaveLength(1)
+    //     act(() => compRender = renderer.create(<GCCollapse {...rest} isDisabled />))
+    //     const theClick = compRender.root.findByProps({ className: 'disbIco bluePlus d-inline-block align-middle mb-0' })
+    //     act(() => theClick.props.onClick({ preventDefault }))
+    //     const spacesStays = compRender.root.findAllByProps({ className: 'row m-0' })
+    //     expect(spacesStays).toHaveLength(1)
+    // })
+    test('Should accept the click without the props forceClose and open the collapse', () => {
+        const preventDefault = jest.fn()
+        let compRender
+        act(() => compRender = renderer.create(<GCCollapse {...rest} />))
+        const toClick = compRender.root.findByProps({ className: ' bluePlus d-inline-block align-middle mb-0' })
+        act(() => toClick.props.onClick({ preventDefault }))
+        const children = compRender.root.findAllByProps({ className: 'h3 text-muted text-center' })
+        expect(children).toHaveLength(1)
+        expect(preventDefault).toHaveBeenCalled()
+    })
+    test('Should not accept the click with the props forceClose and not open the collapse', () => {
+        const preventDefault = jest.fn()
+        let compRender
+        act(() => compRender = renderer.create(<GCCollapse {...rest} forceClose />))
+        const toClick = compRender.root.findByProps({ className: 'disbIco bluePlus d-inline-block align-middle mb-0' })
+        act(() => toClick.props.onClick({ preventDefault }))
+        const children = compRender.root.findAllByProps({ className: 'h3 text-muted text-center' })
+        expect(children).toHaveLength(0)
+        expect(preventDefault).not.toHaveBeenCalled()
+    })
+    test('Should not accept the click on section without the props fullClick', () => {
+        let compRender
+        act(() => compRender = renderer.create(<GCCollapse {...rest} />))
+        const noChildren = compRender.root.findAllByProps({ className: 'h3 text-muted text-center' })
+        expect(noChildren).toHaveLength(0)
+        const [toClick] = compRender.root.findAllByType('section')
+        act(() => toClick.props.onClick())
+        const children = compRender.root.findAllByProps({ className: 'h3 text-muted text-center' })
+        expect(children).toHaveLength(0)
+    })
+    test('Should accept the click on section with the props fullClick', () => {
+        let compRender
+        act(() => compRender = renderer.create(<GCCollapse {...rest} fullClick />))
+        const noChildren = compRender.root.findAllByProps({ className: 'h3 text-muted text-center' })
+        expect(noChildren).toHaveLength(0)
+        const [toClick] = compRender.root.findAllByType('section')
+        act(() => toClick.props.onClick())
+        const children = compRender.root.findAllByProps({ className: 'h3 text-muted text-center' })
+        expect(children).toHaveLength(1)
+    })
+})

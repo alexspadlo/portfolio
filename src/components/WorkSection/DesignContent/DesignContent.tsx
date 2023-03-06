@@ -19,16 +19,16 @@ const DesignContent: FC = () => {
                 </div>
                 {buttons.map((btN, ix) => (
                     <div key={`imagesArt${ix + 1}`} className='col-12 col-lg-2 col-md-6 text-center'>
-                        <span onClick={() => setChoosed(btN.ref)} className={`btn ${choosed === btN.ref ? 'active' : ''} mb-3 btn-info`}>{btN.text}</span>
+                        <span onClick={() => setChoosed(btN.ref)} className={`btn ${choosed === btN.ref ? 'active' : ''} mb-4 btn-info`}>{btN.text}</span>
                     </div>
                 ))}
                 {images && images.length > 0 &&
-                    <div className='col-12'>
+                    <div className='col-12 mb-3'>
                         <div id="designCarousel" className={`carousel slide`} data-ride="carousel">
-                            <div className="carousel-inner px-5"> {/* Test to lock the height */}
+                            <div className="carousel-inner text-center px-5">
                                 {images.map((img, iImg) => (
                                     <div key={`img${iImg}`} className={`carousel-item ${iImg === 0 ? 'active' : ''}`}>
-                                        <img className="d-block w-100" src={img.data} alt={img.data} />
+                                        <img className={s.imgHei} src={img.data} alt={img.data} />
                                     </div>
                                 ))}
                             </div>
