@@ -158,6 +158,37 @@ exports[`Test on <MainComp /> component Should render without the props 1`] = `
         className="col-12 col-lg-7 m-auto"
       >
         <section
+          className="w-100 text-center"
+        >
+          <p
+            className="fontBold h2"
+          >
+            Artworks Showcase
+          </p>
+          <p
+            className="fontThin"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+          <span
+            className="btn mt-1 btn-info"
+          >
+            View Artworks
+          </span>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container-fluid my-5 py-4"
+  >
+    <div
+      className="row py-5"
+    >
+      <div
+        className="col-12 col-lg-7 m-auto"
+      >
+        <section
           className="boxStyle"
         >
           <div

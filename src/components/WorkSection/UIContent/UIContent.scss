@@ -1,1 +1,8 @@
 @import "../../../stylesheet/vars.scss";
+
+.colapStyle {
+  border: 1px solid $colGold;
+  border-radius: 5px;
+  padding: 50px 10px 10px;
+  margin-bottom: 15px;
+}

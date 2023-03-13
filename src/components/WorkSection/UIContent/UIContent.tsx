@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import GenCollapse from '@generic/GenCollapse'
+import uiSchema from './data'
 import s from './UIContent.scss'
 
 const UIContent: FC = () => {
@@ -10,12 +11,14 @@ const UIContent: FC = () => {
                     <p className={`h2 mb-3 ${s.fontBold} ${s.txtcolBlack}`}>Web/App UI Design, Prototypes & Coding Specification</p>
                     <hr className={`${s.goldHR} w-100`} />
                 </div>
-                <div className='col-12'>
-                    <GenCollapse
-                        text='Some options'
-                        children={<p>more options</p>}
-                    />
-                </div>
+                {uiSchema && uiSchema.length > 0 &&
+                    uiSchema.map((uSch) => (
+                        <div key={uSch.ref} className='col-12'>
+                            <GenCollapse text={uSch.title} customClass={`${s.colapStyle}`} >
+                                {uSch.content}
+                            </GenCollapse>
+                        </div>
+                    ))}
             </div>
         </div>
 
