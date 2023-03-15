@@ -16,7 +16,7 @@ exports[`Test on <WorkSection /> component Should render without the props 1`] =
         <p
           className="h2 mb-3 fontBold"
         >
-          Web/App UI Design, Prototypes & Coding Specification
+          Web/App UI Design & Specification
         </p>
         <p
           className="fontThin mb-4"

@@ -13,7 +13,7 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
       <p
         className="h2 mb-3 fontBold txtcolBlack"
       >
-        Web/App UI Design, Prototypes & Coding Specification
+        Web/App UI Design & Specification
       </p>
       <hr
         className="goldHR w-100"
@@ -26,9 +26,124 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
         aria-hidden="true"
         className="w-100  colapStyle"
         onClick={[Function]}
+        style={
+          {
+            "backgroundImage": "url(test-file-stub)",
+          }
+        }
       >
         <div
-          className="row"
+          className="row rowBack"
+        >
+          <div
+            className="col-10"
+          >
+            <p
+              className="gcLight mb-0 h4 mt-1"
+            >
+              Globechain - Manage Dashboard (Design and Develop)
+            </p>
+          </div>
+          <div
+            className="col-2 text-right"
+          >
+            <span
+              aria-hidden="true"
+              className="txtGold gcBold d-inline-block align-middle h2 mb-0"
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-plus pointer"
+                data-icon="plus"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={{}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
+                  fill="currentColor"
+                  style={{}}
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      className="col-12"
+    >
+      <section
+        aria-hidden="true"
+        className="w-100  colapStyle"
+        onClick={[Function]}
+        style={
+          {
+            "backgroundImage": "url(test-file-stub)",
+          }
+        }
+      >
+        <div
+          className="row rowBack"
+        >
+          <div
+            className="col-10"
+          >
+            <p
+              className="gcLight mb-0 h4 mt-1"
+            >
+              Globechain - Reports (Design and Develop)
+            </p>
+          </div>
+          <div
+            className="col-2 text-right"
+          >
+            <span
+              aria-hidden="true"
+              className="txtGold gcBold d-inline-block align-middle h2 mb-0"
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-plus pointer"
+                data-icon="plus"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={{}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
+                  fill="currentColor"
+                  style={{}}
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      className="col-12"
+    >
+      <section
+        aria-hidden="true"
+        className="w-100  colapStyle"
+        onClick={[Function]}
+        style={
+          {
+            "backgroundImage": "url(test-file-stub)",
+          }
+        }
+      >
+        <div
+          className="row rowBack"
         >
           <div
             className="col-10"
@@ -49,7 +164,7 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-plus "
+                className="svg-inline--fa fa-plus pointer"
                 data-icon="plus"
                 data-prefix="fas"
                 focusable="false"
@@ -76,9 +191,14 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
         aria-hidden="true"
         className="w-100  colapStyle"
         onClick={[Function]}
+        style={
+          {
+            "backgroundImage": "url(test-file-stub)",
+          }
+        }
       >
         <div
-          className="row"
+          className="row rowBack"
         >
           <div
             className="col-10"
@@ -86,7 +206,7 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
             <p
               className="gcLight mb-0 h4 mt-1"
             >
-              Ui Spec 2
+              BodyWork - Fitness Club Website
             </p>
           </div>
           <div
@@ -99,7 +219,7 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-plus "
+                className="svg-inline--fa fa-plus pointer"
                 data-icon="plus"
                 data-prefix="fas"
                 focusable="false"
@@ -126,9 +246,14 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
         aria-hidden="true"
         className="w-100  colapStyle"
         onClick={[Function]}
+        style={
+          {
+            "backgroundImage": "url(test-file-stub)",
+          }
+        }
       >
         <div
-          className="row"
+          className="row rowBack"
         >
           <div
             className="col-10"
@@ -136,7 +261,7 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
             <p
               className="gcLight mb-0 h4 mt-1"
             >
-              Ui Spec 3
+              EVENTI - Fashion Events Searcher
             </p>
           </div>
           <div
@@ -149,7 +274,7 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-plus "
+                className="svg-inline--fa fa-plus pointer"
                 data-icon="plus"
                 data-prefix="fas"
                 focusable="false"
@@ -176,9 +301,14 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
         aria-hidden="true"
         className="w-100  colapStyle"
         onClick={[Function]}
+        style={
+          {
+            "backgroundImage": "url(test-file-stub)",
+          }
+        }
       >
         <div
-          className="row"
+          className="row rowBack"
         >
           <div
             className="col-10"
@@ -186,7 +316,7 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
             <p
               className="gcLight mb-0 h4 mt-1"
             >
-              Ui Spec 4
+              Muzz App - Music App
             </p>
           </div>
           <div
@@ -199,7 +329,7 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-plus "
+                className="svg-inline--fa fa-plus pointer"
                 data-icon="plus"
                 data-prefix="fas"
                 focusable="false"
@@ -226,9 +356,14 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
         aria-hidden="true"
         className="w-100  colapStyle"
         onClick={[Function]}
+        style={
+          {
+            "backgroundImage": "url(test-file-stub)",
+          }
+        }
       >
         <div
-          className="row"
+          className="row rowBack"
         >
           <div
             className="col-10"
@@ -236,7 +371,7 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
             <p
               className="gcLight mb-0 h4 mt-1"
             >
-              Ui Spec 5
+              polSKY App - Poland Travel App
             </p>
           </div>
           <div
@@ -249,157 +384,7 @@ exports[`Test on <UIContent /> component Should render without the props 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-plus "
-                data-icon="plus"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                style={{}}
-                viewBox="0 0 448 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                  fill="currentColor"
-                  style={{}}
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div
-      className="col-12"
-    >
-      <section
-        aria-hidden="true"
-        className="w-100  colapStyle"
-        onClick={[Function]}
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="col-10"
-          >
-            <p
-              className="gcLight mb-0 h4 mt-1"
-            >
-              Ui Spec 6
-            </p>
-          </div>
-          <div
-            className="col-2 text-right"
-          >
-            <span
-              aria-hidden="true"
-              className="txtGold gcBold d-inline-block align-middle h2 mb-0"
-              onClick={[Function]}
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-plus "
-                data-icon="plus"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                style={{}}
-                viewBox="0 0 448 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                  fill="currentColor"
-                  style={{}}
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div
-      className="col-12"
-    >
-      <section
-        aria-hidden="true"
-        className="w-100  colapStyle"
-        onClick={[Function]}
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="col-10"
-          >
-            <p
-              className="gcLight mb-0 h4 mt-1"
-            >
-              Ui Spec 7
-            </p>
-          </div>
-          <div
-            className="col-2 text-right"
-          >
-            <span
-              aria-hidden="true"
-              className="txtGold gcBold d-inline-block align-middle h2 mb-0"
-              onClick={[Function]}
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-plus "
-                data-icon="plus"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                style={{}}
-                viewBox="0 0 448 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                  fill="currentColor"
-                  style={{}}
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div
-      className="col-12"
-    >
-      <section
-        aria-hidden="true"
-        className="w-100  colapStyle"
-        onClick={[Function]}
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="col-10"
-          >
-            <p
-              className="gcLight mb-0 h4 mt-1"
-            >
-              Ui Spec 8
-            </p>
-          </div>
-          <div
-            className="col-2 text-right"
-          >
-            <span
-              aria-hidden="true"
-              className="txtGold gcBold d-inline-block align-middle h2 mb-0"
-              onClick={[Function]}
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-plus "
+                className="svg-inline--fa fa-plus pointer"
                 data-icon="plus"
                 data-prefix="fas"
                 focusable="false"

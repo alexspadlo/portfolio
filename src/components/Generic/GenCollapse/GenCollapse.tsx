@@ -7,22 +7,25 @@ export interface GenCollapseProps {
     children: ReactNode,
     content?: ReactNode,
     fullClick?: boolean,
-    customClass?: string
+    customClass?: string,
+    rowClass?: string,
+    style?: object
 }
 
-export const GenCollapse: FC<GenCollapseProps> = ({ text, children, content, fullClick, customClass }) => {
+export const GenCollapse: FC<GenCollapseProps> = ({ text, children, content, fullClick, customClass, rowClass, style }) => {
     if ((!text && !content) || !children) return null
     const [togColap, settogColap] = useState(false)
     return (
         <section
             aria-hidden="true"
+            style={style}
             className={`w-100 ${fullClick ? s.gcPointer : ''} ${customClass || ''}`}
             onClick={() => {
                 if (!fullClick) return null
                 return settogColap(!togColap)
             }}
         >
-            <div className='row'>
+            <div className={`row ${rowClass || ''}`}>
                 <div className='col-10'>
                     {!content && text && <p className={`${s.gcLight} mb-0 h4 mt-1`}>{text}</p>}
                     {content}
@@ -35,7 +38,7 @@ export const GenCollapse: FC<GenCollapseProps> = ({ text, children, content, ful
                             return settogColap(!togColap)
                         }}
                         className={`${s.txtGold} ${s.gcBold} d-inline-block align-middle h2 mb-0`}>
-                        <GCFontAwe nameIco={`fa-${togColap ? 'minus' : 'plus'}`} />
+                        <GCFontAwe nameIco={`fa-${togColap ? 'minus' : 'plus'}`} customClass={s.pointer} />
                     </span>
                 </div>
                 {togColap &&
