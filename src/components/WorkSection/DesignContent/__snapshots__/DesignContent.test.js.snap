@@ -8,7 +8,7 @@ exports[`Test on <DesignContent /> component Should render without the props 1`]
     className="row"
   >
     <div
-      className="col-12 pb-3 text-right"
+      className="col-12 text-right"
     >
       <p
         className="h2 mb-3 fontBold txtcolBlack"
@@ -22,62 +22,98 @@ exports[`Test on <DesignContent /> component Should render without the props 1`]
     <div
       className="col-12 col-lg-2 col-md-6 text-center"
     >
-      <span
-        className="btn active mb-4 btn-info"
-        onClick={[Function]}
+      <section
+        className="w-100"
       >
-        Banners
-      </span>
+        <span
+          aria-hidden="true"
+          className="d-block d-md-inline-block  active mb-3 textLink"
+          onClick={[Function]}
+          role="button"
+        >
+          Banners
+        </span>
+      </section>
     </div>
     <div
       className="col-12 col-lg-2 col-md-6 text-center"
     >
-      <span
-        className="btn  mb-4 btn-info"
-        onClick={[Function]}
+      <section
+        className="w-100"
       >
-        Posters
-      </span>
+        <span
+          aria-hidden="true"
+          className="d-block d-md-inline-block   mb-3 textLink"
+          onClick={[Function]}
+          role="button"
+        >
+          Posters
+        </span>
+      </section>
     </div>
     <div
       className="col-12 col-lg-2 col-md-6 text-center"
     >
-      <span
-        className="btn  mb-4 btn-info"
-        onClick={[Function]}
+      <section
+        className="w-100"
       >
-        Newsletters
-      </span>
+        <span
+          aria-hidden="true"
+          className="d-block d-md-inline-block   mb-3 textLink"
+          onClick={[Function]}
+          role="button"
+        >
+          Newsletters
+        </span>
+      </section>
     </div>
     <div
       className="col-12 col-lg-2 col-md-6 text-center"
     >
-      <span
-        className="btn  mb-4 btn-info"
-        onClick={[Function]}
+      <section
+        className="w-100"
       >
-        Motion
-      </span>
+        <span
+          aria-hidden="true"
+          className="d-block d-md-inline-block   mb-3 textLink"
+          onClick={[Function]}
+          role="button"
+        >
+          Motion
+        </span>
+      </section>
     </div>
     <div
       className="col-12 col-lg-2 col-md-6 text-center"
     >
-      <span
-        className="btn  mb-4 btn-info"
-        onClick={[Function]}
+      <section
+        className="w-100"
       >
-        Logos
-      </span>
+        <span
+          aria-hidden="true"
+          className="d-block d-md-inline-block   mb-3 textLink"
+          onClick={[Function]}
+          role="button"
+        >
+          Logos
+        </span>
+      </section>
     </div>
     <div
       className="col-12 col-lg-2 col-md-6 text-center"
     >
-      <span
-        className="btn  mb-4 btn-info"
-        onClick={[Function]}
+      <section
+        className="w-100"
       >
-        Artworks
-      </span>
+        <span
+          aria-hidden="true"
+          className="d-block d-md-inline-block   mb-3 textLink"
+          onClick={[Function]}
+          role="button"
+        >
+          Artworks
+        </span>
+      </section>
     </div>
     <div
       className="col-12 mb-3"

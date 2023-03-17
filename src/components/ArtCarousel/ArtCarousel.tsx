@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import GenButton from '@generic/GenButton'
 import s from './ArtCarousel.scss'
 
 const ArtCarousel: FC = () => {
@@ -8,8 +9,8 @@ const ArtCarousel: FC = () => {
                 <div className='col-12 col-lg-7 m-auto'>
                     <section className='w-100 text-center'>
                         <p className={`${s.fontBold} h2`}>Artworks Showcase</p>
-                        <p className={`${s.fontThin}`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        <span className="btn mt-1 btn-info">View Artworks</span>
+                        <p className={`${s.fontThin}`}>Art is my safe haven, where I flee in the sad days and also in the happy days to expose my inspirations.</p>
+                        <GenButton content='View Artworks' onClick={() => console.log('artworks')} />
                     </section>
                 </div>
                 {/* <div className='col-12'>

@@ -19,7 +19,7 @@ exports[`Test on <MainComp /> component Should render without the props 1`] = `
           <p
             className="letterStyle"
           >
-            PROGRAMING
+            PROGRAMMING
           </p>
           <p
             className="typeStyle"
@@ -92,15 +92,20 @@ exports[`Test on <MainComp /> component Should render without the props 1`] = `
           <p
             className="fontThin mb-4"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            The challenge of developing these projects and all the knowledge I got from the work is what I like most about working as a UX / UI Designer. Aligning business expectations with user-centered design to create better experiences and achieve goals and conversions through user testing, ideation, wireframes, prototyping, and UI design.
           </p>
-          <span
-            aria-hidden="true"
-            className="btn mb-3 btn-info"
-            onClick={[Function]}
+          <section
+            className="w-100"
           >
-            Take a look
-          </span>
+            <span
+              aria-hidden="true"
+              className="d-block d-md-inline-block   textLink"
+              onClick={[Function]}
+              role="button"
+            >
+              Take a look
+            </span>
+          </section>
         </section>
       </div>
       <div
@@ -135,15 +140,20 @@ exports[`Test on <MainComp /> component Should render without the props 1`] = `
           <p
             className="fontThin mb-4"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            From the point of origin comes the idea, a scribble on paper, digitization and the end product. Each process is pure magic and it feels like I'm not at work, but in an intellectual therapy to develop creativity and to be happy with myself.
           </p>
-          <span
-            aria-hidden="true"
-            className="btn mb-3 btn-info"
-            onClick={[Function]}
+          <section
+            className="w-100"
           >
-            Take a look
-          </span>
+            <span
+              aria-hidden="true"
+              className="d-block d-md-inline-block   textLink"
+              onClick={[Function]}
+              role="button"
+            >
+              Take a look
+            </span>
+          </section>
         </section>
       </div>
     </div>
@@ -168,13 +178,20 @@ exports[`Test on <MainComp /> component Should render without the props 1`] = `
           <p
             className="fontThin"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Art is my safe haven, where I flee in the sad days and also in the happy days to expose my inspirations.
           </p>
-          <span
-            className="btn mt-1 btn-info"
+          <section
+            className="w-100"
           >
-            View Artworks
-          </span>
+            <span
+              aria-hidden="true"
+              className="d-block d-md-inline-block   textLink"
+              onClick={[Function]}
+              role="button"
+            >
+              View Artworks
+            </span>
+          </section>
         </section>
       </div>
     </div>
@@ -220,13 +237,20 @@ exports[`Test on <MainComp /> component Should render without the props 1`] = `
                   <p
                     className="fontThin"
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    Like my Artworks? Feel free to check my store, where you can find tons of products with my art printed on. By purchase them, you supposrting my art (before AI will take over) and give me motivation for more art-making :)
                   </p>
-                  <span
-                    className="btn mt-3 btn-info"
+                  <section
+                    className="w-100"
                   >
-                    View shop
-                  </span>
+                    <span
+                      aria-hidden="true"
+                      className="d-block d-md-inline-block   textLink"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      View shop
+                    </span>
+                  </section>
                 </section>
               </section>
             </div>

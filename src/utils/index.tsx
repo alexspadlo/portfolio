@@ -6,3 +6,5 @@ export const UpperFirst = (sentence?: string) => {
 }
 
 export const helperCloser = () => $('#popUpAlex').modal('hide')
+
+export const sleep = (ms?: number) => new Promise((resolve) => setTimeout(resolve, ms))

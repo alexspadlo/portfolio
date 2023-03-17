@@ -3,7 +3,7 @@
 .dropDownColor {
   background-color: $colGold !important;
   padding: 0 !important;
-  transform: translate3d(-95px, 27px, 0);
+  transform: translate3d(-95px, 27px, 0) !important;
 
   .dropLink {
     padding: 10px;

@@ -1,17 +1,17 @@
-import React, { FC, MouseEventHandler } from 'react'
+import React, { FC } from 'react'
 // import uuid from 'react-uuid'
 import s from './GenDropDown.scss'
 
 interface DataD {
     label: string,
-    action: MouseEventHandler<HTMLSpanElement>
+    action: () => void
 }
 
 interface DropProps {
     dropData: Array<DataD>
     dropId: string
     txtClass?: string
-    onClick: MouseEventHandler<HTMLSpanElement>
+    onClick: (p1: DataD) => void,
     dropLabel?: string,
 }
 
@@ -31,7 +31,7 @@ const GenDropDown: FC<DropProps> = ({
                         key={'moreOptId'}
                         aria-hidden="true"
                         role="button"
-                        onClick={(e) => onClick(e)}
+                        onClick={() => onClick(moreOpt)}
                         className={`${s.pointer} ${s.dropLink} dropdown-item`}
                     >
                         {moreOpt.label}

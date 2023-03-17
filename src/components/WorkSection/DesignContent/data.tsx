@@ -1,3 +1,5 @@
+// motion
+import video from '@images/drop.mp4'
 //newsletters
 import newsletter01 from '@images/newsletter01.png'
 import newsletter02 from '@images/newsletter02.png'
@@ -40,7 +42,23 @@ import artwork014 from '@images/artwork13.png'
 import artwork015 from '@images/artwork14.png'
 import artwork016 from '@images/artwork15.png'
 
-const designSchema = {
+interface ImageProps {
+    data: string,
+    isVideo?: boolean
+}
+
+interface ButtonProps {
+    ref: string,
+    text: string,
+    images: Array<ImageProps>
+}
+
+interface DesProps {
+    title: string,
+    buttons: Array<ButtonProps>
+}
+
+const designSchema: DesProps = {
     title: 'Commercial Design',
     buttons: [
         { 
@@ -113,7 +131,10 @@ const designSchema = {
             ref: 'motion',
             text: 'Motion',
             images: [
-                
+                { 
+                    data: video,
+                    isVideo: true
+                }
             ]
         },
         { 

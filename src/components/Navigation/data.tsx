@@ -1,7 +1,3 @@
-import React from 'react'
-
-// const emailAddress = 'alexspadlo'
-
 const navSchema = {
     title: 'Aleksandra Spadlo Portfolio',
     socials: [
@@ -18,17 +14,8 @@ const navSchema = {
             url: "https://www.behance.net/alexandraspadlo",
             icon: "fa-behance",
             hasMar: true
-        }
-    ],
-    contSchema: {
-        label: 'CONTACT',
-        dropdown: [
-            {
-                label: <span>alexspadlo@gmail.com <i className="fas fa-envelope-open-text"/></span>,
-                // action: window.location.href = `mailto: ${emailAddress}`,
-            },
-        ],
-    }
+        },
+    ]
 }
 
 export default navSchema

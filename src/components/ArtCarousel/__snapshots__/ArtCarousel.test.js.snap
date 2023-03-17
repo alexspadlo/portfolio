@@ -21,13 +21,20 @@ exports[`Test on <ArtCarousel /> component Should render without the props 1`] =
         <p
           className="fontThin"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          Art is my safe haven, where I flee in the sad days and also in the happy days to expose my inspirations.
         </p>
-        <span
-          className="btn mt-1 btn-info"
+        <section
+          className="w-100"
         >
-          View Artworks
-        </span>
+          <span
+            aria-hidden="true"
+            className="d-block d-md-inline-block   textLink"
+            onClick={[Function]}
+            role="button"
+          >
+            View Artworks
+          </span>
+        </section>
       </section>
     </div>
   </div>

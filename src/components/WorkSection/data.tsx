@@ -2,11 +2,11 @@ const workSchema = {
     button: 'Take a look',
     workSection: {
         title: 'Web/App UI Design & Specification',
-        subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        subTitle: 'The challenge of developing these projects and all the knowledge I got from the work is what I like most about working as a UX / UI Designer. Aligning business expectations with user-centered design to create better experiences and achieve goals and conversions through user testing, ideation, wireframes, prototyping, and UI design.'
     },
     designSection: {
         title: 'Commercial & Art Design',
-        subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        subTitle: 'From the point of origin comes the idea, a scribble on paper, digitization and the end product. Each process is pure magic and it feels like I\'m not at work, but in an intellectual therapy to develop creativity and to be happy with myself.'
     }
 }
 

@@ -2,6 +2,7 @@
 // packages
 declare module 'jquery'
 declare module 'react-router-dom'
+declare module 'react-copy-to-clipboard'
 
 // paths
 declare module '@fortawesome/free-solid-svg-icons'

@@ -1,4 +1,5 @@
 import React, { FC, useState } from 'react'
+import GenButton from '@generic/GenButton'
 import designSchema from './data'
 import s from './DesignContent.scss'
 
@@ -13,13 +14,13 @@ const DesignContent: FC = () => {
     return (
         <div className='container-fluid'>
             <div className='row'>
-                <div className='col-12 pb-3 text-right'>
+                <div className='col-12 text-right'>
                     <p className={`h2 mb-3 ${s.fontBold} ${s.txtcolBlack}`}>{title}</p>
                     <hr className={`${s.goldHR} w-100`} />
                 </div>
                 {buttons.map((btN, ix) => (
                     <div key={`imagesArt${ix + 1}`} className='col-12 col-lg-2 col-md-6 text-center'>
-                        <span onClick={() => setChoosed(btN.ref)} className={`btn ${choosed === btN.ref ? 'active' : ''} mb-4 btn-info`}>{btN.text}</span>
+                        <GenButton content={btN.text} onClick={() => setChoosed(btN.ref)} customClass={`${choosed === btN.ref ? 'active' : ''} mb-3`} />
                     </div>
                 ))}
                 {images && images.length > 0 &&
@@ -28,7 +29,14 @@ const DesignContent: FC = () => {
                             <div className="carousel-inner text-center px-5">
                                 {images.map((img, iImg) => (
                                     <div key={`img${iImg}`} className={`carousel-item ${iImg === 0 ? 'active' : ''}`}>
-                                        <img className={s.imgHei} src={img.data} alt={img.data} />
+                                        {!img.isVideo &&
+                                            <img className={s.imgHei} src={img.data} alt={img.data} />
+                                        }
+                                        {img.isVideo &&
+                                            <video className="w-100" height="auto" autoPlay >
+                                                <source src={img.data} type="video/mp4" />
+                                            </video>
+                                        }
                                     </div>
                                 ))}
                             </div>

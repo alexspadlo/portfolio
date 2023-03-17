@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { PopupProps } from '../Generic/PopUp'
+import GenButton from '@generic/GenButton'
 import UIContent from './UIContent'
 import DesignContent from './DesignContent'
 import workSchema from './data'
@@ -35,12 +36,7 @@ const WorkSection: FC<WorkProps> = ({ handlePopup }) => {
                     <section className={`${s.codingStyle}`}>
                         <p className={`h2 mb-3 ${s.fontBold}`}>{workSection.title}</p>
                         <p className={`${s.fontThin} mb-4`}>{workSection.subTitle}</p>
-                        <span
-                            aria-hidden="true"
-                            onClick={() => handleUI()}
-                            className="btn mb-3 btn-info">
-                            {button}
-                        </span>
+                        <GenButton content={button} onClick={() => handleUI()} />
                     </section>
                 </div>
                 <div className="col-12 col-lg-6 p-0">
@@ -55,12 +51,7 @@ const WorkSection: FC<WorkProps> = ({ handlePopup }) => {
                     <section className={`${s.codingStyle}`}>
                         <p className={`h2 mb-3 ${s.fontBold}`}>{designSection.title}</p>
                         <p className={`${s.fontThin} mb-4`}>{designSection.subTitle}</p>
-                        <span
-                            aria-hidden="true"
-                            onClick={() => handleDesign()}
-                            className="btn mb-3 btn-info">
-                            {button}
-                        </span>
+                        <GenButton content={button} onClick={() => handleDesign()} />
                     </section>
                 </div>
             </div>

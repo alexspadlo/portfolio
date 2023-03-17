@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import GenButton from '@generic/GenButton'
 import shopPaint from '@images/forShop.png'
 import s from './StoreSection.scss'
 
@@ -16,8 +17,8 @@ const StoreSection: FC = () => {
                                 <section className='w-100 text-center py-5 py-lg-4 px-4 h-100 position-relative'>
                                     <section className={`${s.centerAlign} position-relative position-lg-absolute`}>
                                         <p className={`${s.fontBold} h4`}>Support my Art</p>
-                                        <p className={`${s.fontThin}`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                        <span className="btn mt-3 btn-info">View shop</span>
+                                        <p className={`${s.fontThin}`}>Like my Artworks? Feel free to check my store, where you can find tons of products with my art printed on. By purchase them, you supposrting my art (before AI will take over) and give me motivation for more art-making :)</p>
+                                        <GenButton content="View shop" onClick={() => window.open('https://www.redbubble.com/people/kapirotex/shop?asc=u')} />
                                     </section>
                                 </section>
                             </div>
