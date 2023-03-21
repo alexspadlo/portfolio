@@ -19,3 +19,9 @@
 .customHei {
   height: 30% !important;
 }
+
+@media (max-width: 580px) {
+  .letterStyle {
+    font-size: 1.5rem;
+  }
+}

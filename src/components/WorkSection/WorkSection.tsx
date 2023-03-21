@@ -34,7 +34,7 @@ const WorkSection: FC<WorkProps> = ({ handlePopup }) => {
             <div className='row'>
                 <div className='col-12 col-lg-6 p-0'>
                     <section className={`${s.codingStyle}`}>
-                        <p className={`h2 mb-3 ${s.fontBold}`}>{workSection.title}</p>
+                        <p className={`h-lg-2 h3 mb-3 ${s.fontBold}`}>{workSection.title}</p>
                         <p className={`${s.fontThin} mb-4`}>{workSection.subTitle}</p>
                         <GenButton content={button} onClick={() => handleUI()} />
                     </section>
@@ -49,7 +49,7 @@ const WorkSection: FC<WorkProps> = ({ handlePopup }) => {
                 </div>
                 <div className='col-12 col-lg-6 text-right p-0'>
                     <section className={`${s.codingStyle}`}>
-                        <p className={`h2 mb-3 ${s.fontBold}`}>{designSection.title}</p>
+                        <p className={`h-lg-2 h3 mb-3 ${s.fontBold}`}>{designSection.title}</p>
                         <p className={`${s.fontThin} mb-4`}>{designSection.subTitle}</p>
                         <GenButton content={button} onClick={() => handleDesign()} />
                     </section>

@@ -1,8 +1,11 @@
 import React, { FC } from 'react'
+import carData from './data'
+import MyArtCarousel from './MyArtCarousel'
 import GenButton from '@generic/GenButton'
 import s from './ArtCarousel.scss'
 
 const ArtCarousel: FC = () => {
+    const { images } = carData || {}
     return (
         <div className='container-fluid my-5 py-4'>
             <div className='row py-5'>
@@ -13,10 +16,8 @@ const ArtCarousel: FC = () => {
                         <GenButton content='View Artworks' onClick={() => console.log('artworks')} />
                     </section>
                 </div>
-                {/* <div className='col-12'>
-
-                </div> */}
             </div>
+            <MyArtCarousel images={images} />
         </div>
 
     )

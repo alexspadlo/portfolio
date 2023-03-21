@@ -38,5 +38,93 @@ exports[`Test on <ArtCarousel /> component Should render without the props 1`] =
       </section>
     </div>
   </div>
+  <section
+    className="w-100 position-relative"
+  >
+    <span
+      className="topBorder"
+    >
+       
+    </span>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm text-center"
+      >
+        <section
+          className="bg-white h-100 pointer"
+          onClick={[Function]}
+        >
+          <img
+            alt="test-file-stub"
+            className="imgClass p-2"
+            src="test-file-stub"
+          />
+        </section>
+      </div>
+      <div
+        className="col-sm text-center"
+      >
+        <section
+          className="bg-white h-100 pointer"
+          onClick={[Function]}
+        >
+          <img
+            alt="test-file-stub"
+            className="imgClass p-2"
+            src="test-file-stub"
+          />
+        </section>
+      </div>
+      <div
+        className="col-sm text-center"
+      >
+        <section
+          className="bg-white h-100 pointer"
+          onClick={[Function]}
+        >
+          <img
+            alt="test-file-stub"
+            className="imgClass p-2"
+            src="test-file-stub"
+          />
+        </section>
+      </div>
+      <div
+        className="col-sm text-center"
+      >
+        <section
+          className="bg-white h-100 pointer"
+          onClick={[Function]}
+        >
+          <img
+            alt="test-file-stub"
+            className="imgClass p-2"
+            src="test-file-stub"
+          />
+        </section>
+      </div>
+      <div
+        className="col-sm text-center"
+      >
+        <section
+          className="bg-white h-100 pointer"
+          onClick={[Function]}
+        >
+          <img
+            alt="test-file-stub"
+            className="imgClass p-2"
+            src="test-file-stub"
+          />
+        </section>
+      </div>
+    </div>
+    <span
+      className="bottomBorder"
+    >
+       
+    </span>
+  </section>
 </div>
 `;
