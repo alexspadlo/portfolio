@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react'
-import { v4 as uuidv4 } from 'uuid'
+// import { v4 as uuidv4 } from 'uuid'
 import s from './MyArtCarousel.scss'
 
 interface ObjImg {
@@ -30,7 +30,7 @@ export const MyArtCarousel: FC<CarProps> = ({ images }) => {
             <span className={s.topBorder}>&nbsp;</span>
             <div className='row'>
                 {arrAct.map(cv => images[cv]).map((cv) => (
-                    <div key={cv.data} className='col-sm text-center' >
+                    <div key={`${cv.data}${cv.index}carousel`} className='col-sm text-center' >
                         <section
                             className={`bg-white h-100 ${s.pointer}`}
                             onClick={() => findEdges(cv.index)} >
