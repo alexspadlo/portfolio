@@ -1,0 +1,75 @@
+@import "../../../stylesheet/_vars.scss";
+
+.codingStyle {
+  padding: 40px 32px;
+  border: 1px solid #caa24f;
+  border-left: none;
+  border-right: none;
+}
+
+.commonBg {
+  height: 100%;
+  border: 1px solid #caa24f;
+  border-right: none;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  animation: example 20s infinite;
+
+  &.designBack {
+    border: 1px solid #caa24f;
+    border-left: none;
+    animation: exampleDesign 20s infinite;
+  }
+}
+
+@keyframes example {
+  0% {
+    opacity: 0.2;
+    background-image: url("../../../static/images/web1.png");
+  }
+
+  30% {
+    opacity: 1;
+    background-image: url("../../../static/images/web1.png");
+  }
+
+  75% {
+    opacity: 1;
+    background-image: url("../../../static/images/kakoiMock.jpg");
+  }
+
+  100% {
+    opacity: 1;
+    background-image: url("../../../static/images/dashboardmock.jpg");
+  }
+}
+
+@keyframes exampleDesign {
+  0% {
+    opacity: 0.2;
+    background-image: url("../../../static/images/commercial.png");
+  }
+
+  30% {
+    opacity: 1;
+    background-image: url("../../../static/images/commercial.png");
+  }
+
+  75% {
+    opacity: 1;
+    background-image: url("../../../static/images/banner1.jpg");
+  }
+
+  100% {
+    opacity: 1;
+    background-image: url("../../../static/images/artwork2.jpg");
+  }
+}
+
+@media (max-width: 992px) {
+  .commonBg {
+    min-height: 300px;
+  }
+}

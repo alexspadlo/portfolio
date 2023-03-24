@@ -1,0 +1,51 @@
+@import "../../../stylesheet/_vars.scss";
+
+.boxStyle {
+  border: 1px solid #caa24f;
+}
+
+.minHeight {
+  min-height: 531px;
+}
+
+.centerAlign {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  opacity: 1;
+  animation: first 3s, second 4s, third 3s;
+}
+
+@keyframes first {
+  from {
+    position: absolute;
+    bottom: -100vh;
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes second {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes third {
+  from {
+    position: absolute;
+  }
+
+  to {
+    position: relative;
+  }
+}

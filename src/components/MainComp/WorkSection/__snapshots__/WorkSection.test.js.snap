@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <WorkSection /> component Should render without the props 1`] = `
+<div
+  className="container-fluid my-5 p-0"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 col-lg-6 p-0 order-2 order-lg-1"
+    >
+      <section
+        className="codingStyle"
+      >
+        <p
+          className="h-lg-2 h3 mb-3 fontBold"
+        >
+          Web/App UI Design & Specification
+        </p>
+        <p
+          className="fontThin mb-4"
+        >
+          The challenge of developing these projects and all the knowledge I got from the work is what I like most about working as a UI Designer/Developer. Aligning business expectations with user-centered design to create better experiences, achieve goals and conversions through user testing, ideation, wireframes, prototyping, and layout design.
+        </p>
+        <section
+          className="w-100"
+        >
+          <span
+            aria-hidden="true"
+            className="d-block d-md-inline-block   textLink"
+            onClick={[Function]}
+            role="button"
+          >
+            Take a look
+          </span>
+        </section>
+      </section>
+    </div>
+    <div
+      className="col-12 col-lg-6 p-0 order-1 order-lg-2"
+    >
+      <section
+        className="commonBg w-100"
+      >
+         
+      </section>
+    </div>
+  </div>
+  <div
+    className="row mt-5"
+  >
+    <div
+      className="col-12 col-lg-6 p-0"
+    >
+      <section
+        className="commonBg designBack w-100"
+      >
+         
+      </section>
+    </div>
+    <div
+      className="col-12 col-lg-6 text-right p-0"
+    >
+      <section
+        className="codingStyle"
+      >
+        <p
+          className="h-lg-2 h3 mb-3 fontBold"
+        >
+          Commercial & Art Design
+        </p>
+        <p
+          className="fontThin mb-4"
+        >
+          From the point of origin comes the idea, a scribble on paper, digitization and the end product. Each process is pure magic and it feels like I'm not at work, but in an intellectual therapy to develop creativity and to be happy with myself. The act of creating those designs can be a way to bring people together, share something meaningful and beautiful with the world.
+        </p>
+        <section
+          className="w-100"
+        >
+          <span
+            aria-hidden="true"
+            className="d-block d-md-inline-block   textLink"
+            onClick={[Function]}
+            role="button"
+          >
+            Take a look
+          </span>
+        </section>
+      </section>
+    </div>
+  </div>
+</div>
+`;

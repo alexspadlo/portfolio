@@ -1,0 +1,52 @@
+@import "../../../../stylesheet/_vars.scss";
+
+.spanClass {
+  display: inline-block;
+  width: 284px;
+  background-color: white;
+}
+
+.imgClass {
+  visibility: visible;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 250px;
+  width: auto;
+  height: 100%;
+  cursor: pointer;
+  animation: fadein 300ms;
+  // animation: fadein 300ms;
+  opacity: 1;
+}
+
+.topBorder {
+  background-color: $colDarkBlue;
+  width: 100%;
+  position: absolute;
+  top: -47px;
+  left: 0;
+  z-index: 1;
+  height: 92px;
+  border-radius: 50%;
+}
+
+.bottomBorder {
+  background-color: $colDarkBlue;
+  width: 100%;
+  position: absolute;
+  bottom: -48px;
+  left: 0;
+  z-index: 1;
+  height: 92px;
+  border-radius: 50%;
+}
+
+@keyframes fadein {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+}

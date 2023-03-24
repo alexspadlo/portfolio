@@ -5,12 +5,12 @@ interface BtnProps {
     onClick: MouseEventHandler<HTMLSpanElement>,
     content: string | ReactNode,
     disabled?: boolean,
+    selectTxt?: boolean,
     customClass?: string,
 }
 
-export const GenButton: FC<BtnProps> = ({ content, customClass, onClick, disabled }) => {
+export const GenButton: FC<BtnProps> = ({ content, customClass, selectTxt, onClick, disabled }) => {
     if (!content || !onClick) return null
-    const [selectTxt, setSelect] = useState(false)
     return (
         <section className="w-100">
             <span

@@ -1,0 +1,87 @@
+@import "../../../stylesheet/_vars.scss";
+
+.letterStyle {
+  letter-spacing: 0.15em;
+  font-family: RobotoBold, sans-serif;
+  font-size: 3.2rem;
+
+  &.design {
+    padding-top: 30px;
+  }
+}
+
+.typeStyle {
+  letter-spacing: 0.15em;
+  font-family: RobotoThin, sans-serif;
+  word-break: break-word;
+}
+
+.customHei {
+  height: 30% !important;
+}
+
+.desAnime {
+  animation: fromTo 2s, posiStyle 10s;
+}
+
+@keyframes fromTo {
+  from {
+    position: absolute;
+    right: -100vh;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes posiStyle {
+  from {
+    position: absolute;
+  }
+
+  to {
+    position: "relative";
+  }
+}
+
+.progAnime {
+  animation: fromToprog 2s, posiProg 10s;
+}
+
+@keyframes fromToprog {
+  from {
+    position: absolute;
+    left: -100vh;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes posiProg {
+  from {
+    position: absolute;
+  }
+
+  to {
+    position: "relative";
+  }
+}
+
+@media (max-width: 992px) {
+  .desAnime {
+    animation: none;
+  }
+
+  .progAnime {
+    animation: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .letterStyle {
+    font-size: 1.5rem;
+  }
+}
